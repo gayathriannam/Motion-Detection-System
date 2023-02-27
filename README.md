@@ -1,2 +1,3 @@
 # Motion-Detection-System
 Motion Detection System - A project that detects motion in real-time using a camera and computer vision algorithms. It includes features such as motion tracking, object recognition, and video recording. Tools used: Python, OpenCV, TensorFlow, and Keras. 
+This code uses the cv2.VideoCapture object to capture frames from a camera, and applies a background subtractor object (cv2.createBackgroundSubtractorMOG2) to detect foreground motion. It then applies a binary threshold to the foreground mask and uses cv2.findContours to find contours in the thresholded image. It filters out small contours and draws bounding boxes around larger ones. Finally, it shows the resulting frame with bounding boxes and waits for a key press to exit the loop.
